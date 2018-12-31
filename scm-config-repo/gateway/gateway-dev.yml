@@ -1,0 +1,26 @@
+zuul:
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+  ignored-services: config
+  forceOriginalQueryStringEncoding: true
+  routes:
+    uaa:
+      path: /uaa/**
+      sensitiveHeaders:
+      serviceId: auth
+    purchase:
+      path: /purchase/**
+      sensitiveHeaders:
+      serviceId: purchase
+  add-proxy-headers: true
+
+security:
+  oauth2:
+    client:
+      access-token-uri: http://localhost:8002/uaa/oauth/token
+      user-authorization-uri: http://localhost:8002/uaa/oauth/authorize
+      client-id: client-gateway
+    resource:
+      user-info-uri: http://localhost:8003/uaa/user
+      prefer-token-info: false

@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: registry
+
+server:
+  port: 8000
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: registry
+    password: 123456
+
+eureka:
+  server:
+    enable-self-preservation: false
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${security.user.name}:${security.user.password}@${eureka.instance.hostname}:${server.port}/eureka

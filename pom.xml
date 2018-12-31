@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--引入Dew父依赖-->
+    <parent>
+        <groupId>com.tairanchina.csp.dew</groupId>
+        <artifactId>parent-starter</artifactId>
+        <version>1.5.0-Beta8</version>
+    </parent>
+
+    <groupId>org.trc</groupId>
+    <artifactId>scm-cloud</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>scm-cloud</name>
+
+    <modules>
+        <module>scm-eureka</module>
+        <module>scm-config</module>
+        <module>scm-gateway</module>
+        <module>scm-monitor</module>
+        <module>scm-auth</module>
+        <module>scm-common</module>
+        <module>scm-service</module>
+        <module>scm-product</module>
+        <module>scm-purchase</module>
+        <module>scm-wms</module>
+        <module>scm-inventory</module>
+        <module>scm-order</module>
+
+        <module>scm-generator</module>
+    </modules>
+
+    <properties>
+        <mapper-spring-boot-starter.version>2.0.4</mapper-spring-boot-starter.version>
+        <mysql-connector-java.version>5.1.38</mysql-connector-java.version>
+        <scm.core.version>0.0.1-SNAPSHOT</scm.core.version>
+        <scm.provider.version>0.0.1-SNAPSHOT</scm.provider.version>
+        <mybatis-generator-core.version>1.3.6</mybatis-generator-core.version>
+        <mapper-generator.version>1.1.1</mapper-generator.version>
+        <commons-lang3.version>3.5</commons-lang3.version>
+        <feign-httpclient.version>9.4.0</feign-httpclient.version>
+        <druid-spring-boot-starter.version>1.1.10</druid-spring-boot-starter.version>
+        <pagehelper-spring-boot-starter.version>1.2.3</pagehelper-spring-boot-starter.version>
+        <mybatisplus-spring-boot-starter.version>1.0.2</mybatisplus-spring-boot-starter.version>
+        <fastjson.version>1.2.29</fastjson.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.trc</groupId>
+                <artifactId>scm-common</artifactId>
+                <version>${scm.core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.trc</groupId>
+                <artifactId>scm-service</artifactId>
+                <version>${scm.core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>${mapper-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>${mybatis-generator-core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-generator</artifactId>
+                <version>${mapper-generator.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-httpclient</artifactId>
+                <version>${feign-httpclient.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatisplus-spring-boot-starter</artifactId>
+                <version>${mybatisplus-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>

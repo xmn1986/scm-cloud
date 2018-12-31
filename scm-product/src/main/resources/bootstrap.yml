@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: product
+  cloud:
+    config:
+      fail-fast: true
+      name: product
+      profile: ${spring.profiles.active}
+      label: master
+      discovery:
+        service-id: config
+        enabled: true
+      username: admin
+      password: admin
+  #rabbitmq:
+   # host: 10.200.131.93
+   # port: 5672
+  #  username: scm
+  #  password: scmDEV999
+
+server:
+  port: 9100
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://registry:123456@localhost:8000/eureka/
+
+management:
+  security:
+    enabled: false #/bus/refresh刷新git配置的时候不校验授权
+
+
+# feign配置
+feign:
+  hystrix:
+    # 在feign中开启hystrix功能，默认情况下feign不开启hystrix功能
+    enabled: true
+  ## 配置httpclient线程池
+  httpclient:
+    enabled: true
+
+
+logging.level.project.user.UserClient: debug
+

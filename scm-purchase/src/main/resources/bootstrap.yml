@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: purchase
+  cloud:
+    config:
+      fail-fast: true
+      name: purchase
+      profile: ${spring.profiles.active}
+      label: master
+      discovery:
+        service-id: config
+        enabled: true
+      username: admin
+      password: admin
+  rabbitmq:
+    host: 10.200.131.93
+    port: 5672
+    username: scm
+    password: scmDEV999
+
+server:
+  port: 9000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://registry:123456@localhost:8000/eureka/

@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      #连接池配置
+      initial-size: 20
+      min-idle: 0
+      max-active: 200
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 1800000
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
