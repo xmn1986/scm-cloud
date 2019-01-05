@@ -22,20 +22,20 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="scm-auth" target="1.5" />
-      <module name="scm-cloud" target="1.5" />
-      <module name="scm-common" target="1.5" />
-      <module name="scm-config" target="1.5" />
-      <module name="scm-eureka" target="1.5" />
-      <module name="scm-gateway" target="1.5" />
-      <module name="scm-generator" target="1.5" />
-      <module name="scm-inventory" target="1.5" />
-      <module name="scm-monitor" target="1.5" />
-      <module name="scm-order" target="1.5" />
-      <module name="scm-product" target="1.5" />
-      <module name="scm-purchase" target="1.5" />
-      <module name="scm-service" target="1.5" />
-      <module name="scm-wms" target="1.5" />
+      <module name="scm-auth" target="1.8" />
+      <module name="scm-cloud" target="1.8" />
+      <module name="scm-common" target="1.8" />
+      <module name="scm-config" target="1.8" />
+      <module name="scm-eureka" target="1.8" />
+      <module name="scm-gateway" target="1.8" />
+      <module name="scm-generator" target="1.8" />
+      <module name="scm-inventory" target="1.8" />
+      <module name="scm-monitor" target="1.8" />
+      <module name="scm-order" target="1.8" />
+      <module name="scm-product" target="1.8" />
+      <module name="scm-purchase" target="1.8" />
+      <module name="scm-service" target="1.8" />
+      <module name="scm-wms" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

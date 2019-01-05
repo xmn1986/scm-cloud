@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-inventory" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-purchase" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scm-wms" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
