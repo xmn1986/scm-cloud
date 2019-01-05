@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="scm-auth" />
+        <module name="scm-common" />
+        <module name="scm-config" />
+        <module name="scm-eureka" />
+        <module name="scm-gateway" />
+        <module name="scm-generator" />
+        <module name="scm-inventory" />
+        <module name="scm-monitor" />
+        <module name="scm-order" />
+        <module name="scm-product" />
+        <module name="scm-purchase" />
+        <module name="scm-service" />
+        <module name="scm-wms" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="scm-auth" target="1.5" />
+      <module name="scm-cloud" target="1.5" />
+      <module name="scm-common" target="1.5" />
+      <module name="scm-config" target="1.5" />
+      <module name="scm-eureka" target="1.5" />
+      <module name="scm-gateway" target="1.5" />
+      <module name="scm-generator" target="1.5" />
+      <module name="scm-inventory" target="1.5" />
+      <module name="scm-monitor" target="1.5" />
+      <module name="scm-order" target="1.5" />
+      <module name="scm-product" target="1.5" />
+      <module name="scm-purchase" target="1.5" />
+      <module name="scm-service" target="1.5" />
+      <module name="scm-wms" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
